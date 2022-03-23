@@ -1,0 +1,22 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		
+		inteiro dia, mes, ano
+
+		escreva ("\nDigite a quantidade de dias que você possui: ")
+		leia (dia)
+
+		ano = dia/365
+		mes = (dia%365)/30
+		dia = (dia%365)%30
+		
+		escreva("\nVocê tem: \n")
+		
+		escreva (ano, " anos de vida\n")
+		escreva (mes, " meses de vida\n")
+		escreva (dia, " dias de vida\n")
+	}
+}
