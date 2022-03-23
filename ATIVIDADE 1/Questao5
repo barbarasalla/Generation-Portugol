@@ -1,0 +1,20 @@
+programa
+{
+	funcao inicio()
+	{
+		
+		real nota1, nota2, nota3, medPonderada
+		
+		escreva ("\nDigite a primeira nota: ")
+		leia (nota1)
+		escreva ("\nDigite a segunda nota: ")
+		leia (nota2)
+		escreva ("\nDigite a terceira nota: ")
+		leia (nota3)
+
+		medPonderada= (nota1*2)+(nota2*3)+(nota3*5)/3
+		
+		escreva("\nA média ponderada do aluno(a) foi ", medPonderada)
+		
+	}
+}
