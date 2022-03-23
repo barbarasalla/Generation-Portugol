@@ -1,0 +1,20 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		
+		inteiro segundos, hora, minutos
+		
+		escreva ("\nDigite a quantidade de segundos que o evento possui: ")
+		leia (segundos)
+
+		minutos= segundos/60
+		hora= minutos/60
+		minutos = minutos%60
+		segundos= (segundos%60)%60
+		
+		escreva("\nO evento tem ", hora, "h. ", minutos ,"min. ", segundos, "seg.")
+
+	}
+}
