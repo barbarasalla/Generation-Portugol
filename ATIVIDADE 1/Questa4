@@ -1,0 +1,24 @@
+programa
+{
+	inclua biblioteca Matematica--> mat
+	
+	funcao inicio()
+	{
+		
+		inteiro a, b, c, r, s, d
+		
+		escreva ("\nDigite o primeiro número: ")
+		leia (a)
+		escreva ("\nDigite o segundo número: ")
+		leia (b)
+		escreva ("\nDigite o terceiro número: ")
+		leia (c)
+
+		r= mat.potencia(a+b, 2)
+		s= mat.potencia(b+c, 2)
+		d=(r+s)/2
+		
+		escreva("\nA soma entre ", r, " e ", s," dividido por 2 é ", d)
+		
+	}
+}
