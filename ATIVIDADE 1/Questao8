@@ -1,0 +1,18 @@
+programa
+{
+	funcao inicio()
+	{
+		
+		real custoFabrica, custoNovo, distribuidor, imposto
+
+		escreva ("\nDigite o custo do valor de fábrica do carro: ")
+		leia (custoFabrica)
+			
+		distribuidor= (custoFabrica/100)*28 
+		imposto= (custoFabrica/100)*45
+		custoNovo = distribuidor+imposto+custoFabrica
+		
+		escreva("\nO custo do carro novo é R$ ", custoNovo)
+		
+	}
+}
