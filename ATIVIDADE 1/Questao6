@@ -1,0 +1,25 @@
+programa
+{
+	inclua biblioteca Matematica--> mat
+	
+	funcao inicio()
+	{
+		
+		inteiro x1, x2, y1, y2
+		real distancia
+
+		escreva ("\nDigite o valor de x da primeira posição: ")
+		leia (x1)
+		escreva ("\nDigite o valor de y da primeira posição: ")
+		leia (y1)
+		escreva ("\nDigite o valor de x da segunda posição: ")
+		leia (x2)
+		escreva ("\nDigite o valor de y da segunda posição: ")
+		leia (y2)
+		
+		distancia = mat.raiz(mat.potencia((x2-x1),2) + mat.potencia((y2-y1), 2), 2)
+		
+		escreva("\nA distância entre os pontos P1(", x1 ,", ", y1 ,") e P2(", x2, ", ", y2, ") é ", mat.arredondar(distancia, 3))
+		
+	}
+}
