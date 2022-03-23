@@ -1,0 +1,20 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		
+		inteiro dia, mes, ano, idadeEmDias
+
+		escreva ("\nDigite o ano que você nasceu: ")
+		leia (ano)
+		escreva ("\nDigite o mês(em número) que você nasceu: ")
+		leia (mes)
+		escreva ("\nDigite o dia que você nasceu: ")
+		leia (dia)
+
+		idadeEmDias= (ano*360)+(mes*30)+dia
+		
+		escreva("\nVocê tem ", idadeEmDias, " dias de vida.")
+	}
+}
