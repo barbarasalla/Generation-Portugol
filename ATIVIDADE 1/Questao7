@@ -1,0 +1,32 @@
+programa
+{
+	inclua biblioteca Matematica	--> mat
+	
+	funcao inicio()
+	{
+		real a, b, c, d, E, f, x, y
+
+		escreva ("\n Digite o valor de a: ")
+		leia (a)
+		escreva ("\n Digite o valor de b: ")
+		leia (b)
+		escreva ("\n Digite o valor de c: ")
+		leia (c)
+		escreva ("\n Digite o valor de d: ")
+		leia (d)
+		escreva ("\n Digite o valor de e: ")
+		leia (E)
+		escreva ("\n Digite o valor de f: ")
+		leia (f)
+
+		x=(c*E-b*f)/(a*E-b*d)
+		y= (a*f)-(c*d)/(a*E-b*d)
+
+		c=a*x+b*y
+		f=d*x+E*y
+
+		escreva("\n Os valores de x e y respectivamente são ", mat.arredondar(x,2) ," e ", mat.arredondar(y,2))
+		escreva("\n O resultado das expressões de c e f respectivamente são ", mat.arredondar(c,2) ," e ", mat.arredondar(f,2))
+		
+	}
+}
