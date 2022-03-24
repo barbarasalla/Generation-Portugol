@@ -1,0 +1,22 @@
+programa
+{
+
+	funcao inicio()
+	{
+		real base, altura
+
+		escreva("Digite a altura do triângulo: ")
+		leia (altura)
+		
+escreva("Digite a base do triângulo: ")
+		leia (base)
+
+		se (altura>0 e base>0){
+			escreva ("\nA área do triângulo é ", (base*altura)/2)
+		}
+		senao{
+			escreva ("Valores de entrada inválidos!")
+		}
+		
+	}
+}
