@@ -1,0 +1,29 @@
+programa
+{
+	inclua biblioteca Matematica -->mat
+	
+	funcao inicio()
+	{
+		inteiro n1, n2, n3, n4, q1,q2,q3,q4
+
+		escreva("\nDigite o número: ")
+		leia(n1)
+		escreva("\nDigite o número: ")
+		leia(n2)
+		escreva("\nDigite o número: ")
+		leia(n3)
+		escreva("\nDigite o número: ")
+		leia(n4)
+
+		q1= mat.potencia(n1,2)
+		q2= mat.potencia(n2,2)
+		q3= mat.potencia(n3,2)
+		q4= mat.potencia(n4,2)
+		
+		se (q3>=1000){
+			escreva("\nO quadrado de ", n3, " é ", q3)
+		} senao {
+			escreva("\nNúmeros digitados: \n\n", n1, "²= ", q1, "\n",n2, "²= ", q2, "\n", n3, "²= ", q3, "\n", n4, "²= ", q4)
+		}
+	}
+}
