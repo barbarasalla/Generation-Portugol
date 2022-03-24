@@ -1,0 +1,27 @@
+programa
+{	
+	funcao inicio()
+	{
+		real indice
+
+		escreva("Digite o índice de poluição: \n")
+		leia(indice)
+		
+		se (indice>=0.05 e indice<=0.25){
+			escreva ("\nÍndice aceitável!")
+		}
+			senao se (indice>0.25 e indice<=0.3){
+				escreva ("\nNotificar as empresas do 1º Grupo!")
+				
+			}
+				senao se (indice>0.3 e indice<=0.4){
+					escreva ("\nNotificar as empresas do 1º Grupo e 2º Grupo!")
+				}
+					senao se(indice>0.4) {
+						escreva ("\nNotificar as empresas do 1º Grupo, 2º Grupo e 3º Grupo!")
+					}
+						senao {
+							escreva ("\nÍndice não registrado em tabela.")
+						}
+	}
+}
