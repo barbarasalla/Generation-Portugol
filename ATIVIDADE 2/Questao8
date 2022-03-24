@@ -1,0 +1,20 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro N
+
+		escreva("Digite um número: ")
+		leia (N)
+
+		se (N>100){
+			escreva ("\nNúmero: ", N)
+		}
+		senao{
+			N=0
+			escreva ("\nNúmero: ", N)
+		}
+		
+	}
+}
