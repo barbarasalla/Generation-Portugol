@@ -18,7 +18,7 @@ programa
 				senao se((idade>13) e (idade<=17)){
 						escreva("\nSua categoria é Juvenil B = 14 a 17 anos")
 					}
-					senao se((idade>18) e (idade<100)){
+					senao se((idade>=18) e (idade<100)){
 							escreva("\nSua categoria é Adultos = Maiores de 18 anos")
 						} senao se((idade<5) ou (idade>=100)){
 							escreva ("\nIdade inválida ou categoria inexistente") 
