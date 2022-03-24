@@ -1,23 +1,23 @@
 programa
 {
-	
 	funcao inicio()
 	{
-		real N, E, salario
+		real N, E, salario1, salario2
 		inteiro C
 		escreva("Digite o código do(a) trabalhador(a): ")
 		leia (C)
 		escreva ("Digite o número de horas trabalhadas: ")
 		leia (N)
-		salario = N*10
+		salario1 = N*10
 		se (N>50){
 			E= N-50
-			salario=salario + E*20
+			salario2=salario1 + E*20
 		} senao{
 			E=0
+			salario2=salario1
 		}
 		
 		escreva("\n\n****CONSULTA DE REMUNERAÇÃO****\n")
-		escreva("\nCódigo do(a) trabalhador(a): ", C, "\nHoras trabalhadas: ", N, "\nValor do salário: R$ ", salario, "\nSalário excedente: R$ ", E*20, "\n")
+		escreva("\nCódigo do(a) trabalhador(a): ", C, "\nHoras trabalhadas: ", N, "\nValor do salário: R$ ", salario1, "\nSalário excedente: R$ ", E*20, "\nValor total da remuneração: R$ ", salario2)
 	}
 }
