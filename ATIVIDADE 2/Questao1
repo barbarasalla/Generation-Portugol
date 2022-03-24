@@ -1,0 +1,19 @@
+programa
+{
+	inclua biblioteca Matematica --> mat
+	
+	funcao inicio()
+	{
+		real P, E=0, M=0
+		escreva("Digite o peso da mercadoria: ")
+		leia (P)
+		se (P>50){
+			E= P-50
+			M= E*4
+			escreva("\nPESO EM EXCESSO!!! PARA LIBERAÇÃO VOCÊ DEVE PAGAR PELO PESO EXCEDIDO.")
+		} senao{
+			escreva("\nPESO ADEQUADO!!! TRANSPORTE LIBERADO.")
+		}
+		escreva("\n\nPeso da mercadoria: ", P, "\nPeso Excedido: ", E, "\nValor da Multa: R$ ", M)
+	}
+}
