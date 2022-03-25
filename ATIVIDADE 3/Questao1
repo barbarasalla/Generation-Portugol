@@ -1,0 +1,30 @@
+programa
+{
+	inclua biblioteca Matematica-->mat
+	
+	funcao inicio()
+	
+	{
+		inteiro i 
+		real salario,maiorsal=0, somasal=0, sal100=0, quantfilh, somfilh=0
+		
+		para (i=1; i<=20; i++){
+			escreva("\nDigite o sálario: ")
+			leia (salario)
+			escreva ("\nDigite a quantidade de filho(a/s): ")
+			leia (quantfilh)
+			
+			somfilh=quantfilh+somfilh
+			somasal= salario+somasal			
+
+			se (salario<=100){
+				sal100++
+			} 
+			
+			se (salario>maiorsal){
+				maiorsal=salario
+			}	
+		}
+		escreva("\n\nMédia do salário da população: R$ ", mat.arredondar(somasal/20,2), "\nMédia do número de filhos: ", mat.arredondar(somfilh/20,1), "\nMaior salário: R$ ", maiorsal, "\nPercentual de pessoas com salário até R$100,00: ", mat.arredondar((100*sal100)/20, 2), "%\n")
+	}
+}
