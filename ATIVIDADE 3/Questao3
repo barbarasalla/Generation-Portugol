@@ -2,10 +2,10 @@ programa
 {	
 	funcao inicio()
 	{
-		inteiro num=0, totalnum=0
+		inteiro num=1, totalnum=0
 		real media=0, soma=0
 
-		enquanto(num>=0){
+		enquanto(num>0){
 			escreva("Digite um valor: ")
 			leia(num)
 			soma=num+soma
