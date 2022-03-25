@@ -4,12 +4,10 @@ programa
 	funcao inicio()
 	{
 		inteiro num=233
-
-		escreva(num, " ")
 		
-		faca{			
-			num=num+3
+		faca{	
 			escreva(num, " ")
+			num=num+3
 		} enquanto(num<300)
 		
 		faca{			
