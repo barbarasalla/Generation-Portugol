@@ -1,18 +1,23 @@
 programa
 {
 	
-	funcao inicio()
-	{
+	funcao inicio(){
+	
 		inteiro num=233
-		
-		faca{	
-			escreva(num, " ")
-			num=num+3
-		} enquanto(num<300)
-		
+
 		faca{			
 			num=num+5
 			escreva(num, " ")
-		} enquanto(num<400)
+		} enquanto(num<=300)
+
+		faca{
+			num=num+3
+			escreva(num, " ")
+		} enquanto(num<=400)
+		
+		faca {			
+			num=num+5
+			escreva(num, " ")
+		} enquanto(num<=456)
 	}
 }
