@@ -1,0 +1,16 @@
+programa
+{	
+	funcao inicio()
+	{
+		inteiro num=0, totalnum=0
+		real media=0, soma=0
+
+		enquanto(num>=0){
+			escreva("Digite um valor: ")
+			leia(num)
+			soma=num+soma
+			totalnum++
+		}
+		escreva("\n\nTotal de números computados: ", totalnum,"\nA soma dos valores de entrada é ", soma, "\nA média do valores de entrada é ", soma/totalnum)
+	}
+}
