@@ -1,0 +1,17 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro i, num=1, soma=0
+
+		para (i=1; i<=500; i++){
+			se (num%3==0){
+				se (num%2==1){
+					soma=soma+num
+				}
+			}
+			num++
+		}
+		escreva("A soma dos números impares e múltiplos de 3 entre 1 e 500 é ", soma)
+	}
+}
