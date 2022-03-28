@@ -3,20 +3,23 @@ programa
 	inclua biblioteca Util
 	funcao inicio()
 	{
-		inteiro i, num[10], maiorNum=0, contMaior=0
+		inteiro i, num[10], maiorNum=0, contMaior=0, somaNum=0
 
 		para (i=0; i<10; i++){
 			num[i]= Util.sorteia(1,6)
+			somaNum+=num[i]
 			se (num[i]>maiorNum){
 				maiorNum= num[i]
 			}
 		}
-		
+		escreva("Valores dos lançamentos: ")
 		para (i=0; i<10; i++){
+			escreva(num[i], " ")
 			se (num[i]==maiorNum){
 			contMaior++
 			}
 		}
+		escreva("\n\nA média aritmética dos valores de lançamento foi ", somaNum/10)
 		escreva("\n\nO maior número sorteado foi ", maiorNum)
 		escreva("\nO maior número apareceu ", contMaior, " vezes.")
 	}
