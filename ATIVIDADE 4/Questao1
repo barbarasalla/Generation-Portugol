@@ -1,0 +1,20 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro i, pontuacao[5], maiorPont=0.0
+
+		para (i=0; i<4; i++){
+			escreva ("\nEscreva a ", i+1, "ª pontuação: ")
+			leia(pontuacao[i])
+			se (pontuacao[i]>maiorPont){
+				maiorPont= pontuacao[i]
+			}
+		}
+		para(i=0; i<4; i++){
+			escreva("\n", i+1, "ª pontuação foi ", pontuacao[i])
+		}		
+		escreva("\n\nA maior pontuação foi ", maiorPont)
+	}
+}
