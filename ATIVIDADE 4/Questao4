@@ -1,0 +1,20 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro i, j, matriz[3][3], somaMatriz=0, somaDiag=0
+		para (i=0; i<3; i++){
+			para(j=0;j<3; j++){
+				escreva ("Digite o valor da posição (", i, ", ", j, ") da matriz: ")
+				leia (matriz[i][j])
+
+				somaMatriz+=matriz[i][j]
+				se (i==j){
+					somaDiag+=matriz[i][j]
+				}
+			}
+		}
+		escreva("A soma dos valores da matriz é ", somaMatriz, "\nA soma dos valores da diagonal principal é ", somaDiag)
+	}
+}
