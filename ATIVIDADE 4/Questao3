@@ -1,0 +1,48 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro i, j, n1[4][6],n2[4][6], m1[4][6]
+		real m2[4][6]
+		para (i=0; i<4; i++){
+			para(j=0;j<6; j++){
+				escreva ("Digite o valor da posição (", i, ", ", j, ") da primeira matriz: ")
+				leia (n1[i][j])
+			}
+		}
+		
+		para (i=0; i<4; i++){
+			para(j=0;j<6; j++){
+				escreva ("Digite o valor da posição (", i, ", ", j, ") da segunda matriz: ")
+				leia (n2[i][j])
+			}
+		}
+		para (i=0; i<4; i++){
+			para(j=0;j<6; j++){
+				se(i==i e j==j){
+					m1[i][j]= n1[i][j]+n2[i][j]
+					m2[i][j]= n1[i][j]-n2[i][j]
+				}
+			}
+		}
+
+		escreva("\n")
+
+		para (i=0; i<4; i++){
+			para(j=0;j<6; j++){
+				escreva(m1[i][j], " ")
+			}
+			escreva("\n")
+		}
+
+		escreva("\n")
+
+		para (i=0; i<4; i++){
+			para(j=0;j<6; j++){
+				escreva(m2[i][j], " ")
+			}
+			escreva("\n")
+		}
+	}
+}
